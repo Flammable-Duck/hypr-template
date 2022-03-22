@@ -2,24 +2,18 @@
 pkgname=hypr
 version=1.1.1
 revision=2
-#archs="i686 x86_64"
-#wrksrc=
-#create_wrksrc=yes
-build_style=gnu-makefile
-make_build_args="release"
-make_install_args="install"
+archs="x86_64"
 wrksrc="Hypr-${version}"
-#configure_args=""
-#conf_files=""
-#make_dirs="/var/log/dir 0755 root root"
-hostmakedepends=""
+build_style=gnu-makefile
+make_install_args="install"
+make_build_args="release"
 makedepends="base-devel cairo-devel clthreads-devel libxcb-devel cmake gdb ninja xcb-proto
     xcb-util-devel xcb-util-cursor-devel xcb-util-keysyms-devel
     xcb-util-wm-devel gtkmm-devel"
 depends="xmodmap"
-short_desc="a tiling window manager written in modern C++"
+short_desc="Tiling window manager written in modern C++"
 maintainer="Flammable Duck <flammableduck@protonmail.com>"
-license="BSD 3-Clause"
+license="BSD-3-Clause"
 homepage="https://github.com/vaxerski/Hypr"
 distfiles="https://github.com/vaxerski/Hypr/archive/refs/tags/${version}.tar.gz"
 checksum=e75bf39381ddb24e03bf0cea87c03d06d13a83fdf7f08b084ff10e586e3b847c
@@ -35,4 +29,5 @@ do_install() {
     vsconf example/hypr.conf;
     vmkdir /usr/share/xsessions;
     vcopy example/hypr.desktop /usr/share/xsessions/hypr.desktop;
+    vlicense LICENSE
 }

@@ -28,5 +28,6 @@ Instructions for building `hypr` on void linux using `xbps-src`:
 **Note #1:** if you have `xtools` installed you can install the package by running `xi -f hypr` (instead of using `xbps-install`).
 
 ---
+This is my first void package, so please feel free to let me know if there are problems with it.
 
 Special thanks to [@ibhagwan](https://github.com/ibhagwan), who I shamelessly stole this readme from
