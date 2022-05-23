@@ -1,5 +1,10 @@
 ## Void Linux template file for xbps-src
 
+---
+# This Template has been moved to my 
+[void package collection](https://github.com/Flammable-Duck/duck-void-packages) 
+---
+
 Instructions for building `hypr` on void linux using `xbps-src`:
 
 1. Setup the `void-packages` repo:
